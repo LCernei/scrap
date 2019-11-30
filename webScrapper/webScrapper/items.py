@@ -8,7 +8,12 @@
 import scrapy
 
 
-class WebscrapperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class Product(scrapy.Item):
+    name = scrapy.Field()
+    price = scrapy.Field()
+    capacity = scrapy.Field()
+    interface = scrapy.Field()
+    color = scrapy.Field()
+    size = scrapy.Field()
+    weight = scrapy.Field()
+    # last_updated = scrapy.Field(serializer=str)
