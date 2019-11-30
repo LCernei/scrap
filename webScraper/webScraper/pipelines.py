@@ -9,7 +9,7 @@ import pymongo
 import json
 
 
-class WebscrapperPipeline(object):
+class WebscraperPipeline(object):
     def process_item(self, item, spider):
         return item
 

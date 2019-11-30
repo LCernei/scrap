@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>{{title}}</title>
+</head>
+
+<body>
+
+  {% if products[0] %}
+  <b><big>LIST :</big></b>
+  <table>
+    <tr>
+      <td><b>Name</b></td>
+      <td><b>Price</b></td>
+      <td><b>Capacity</b></td>
+      <td><b>Color</b></td>
+      <td><b>Interface</b></td>
+      <td><b>Size</b></td>
+      <td><b>Weight</b></td>
+    </tr>
+    {% for product in products %}
+    <tr>
+      <td>{{ product["name"] }}</td>
+      <td>{{ product["price"] }}</td>
+      <td>{{ product["capacity"] }}</td>
+      <td>{{ product["interface"] }}</td>
+      <td>{{ product["color"] }}</td>
+      <td>{{ product["size"] }}</td>
+      <td>{{ product["weight"] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <h4>No data</h4>
+  {% endif %}
+</body>
+
+</html>

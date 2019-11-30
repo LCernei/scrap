@@ -16,4 +16,3 @@ class Product(scrapy.Item):
     color = scrapy.Field()
     size = scrapy.Field()
     weight = scrapy.Field()
-    # last_updated = scrapy.Field(serializer=str)
